@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": "demo-vm" 
+        },
+        "Username": {
+            "value": "demoadmin" 
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/<SubscriptionID>/resourceGroups/mykeyvaultdeploymentrg/providers/Microsoft.KeyVault/vaults/<KeyVaultName>"
+                },
+                "secretName": "AdminPassword"
+        }
+    },
+        "dnsLabelPrefix": {
+            "value": "demonstrate" 
+        },
+        "windowsOSVersion": {
+            "value": "2016-Datacenter"
+        },
+        "vmSize": {
+            "value": "Standard_A2_v2"
+        },
+        "location": {
+            "value": "westeurope" 
+        }
+    }
+}
