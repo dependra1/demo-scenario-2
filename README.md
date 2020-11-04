@@ -9,8 +9,8 @@ All the passwords are stored in an Azure Service known as key Vault. The deploym
 1) What are different artifacts you need to create - name of the artifacts and its purpose
 A - 
 
-2) List the tools you will to create and store the ARM templates.<br />  
-A - To create ARM templates, we can use VS code and store the templates in local repos, Azure Git repos or Github repos. FOr this scenario, I have used Github repos.  
+2) List the tools you will to create and store the ARM templates.<br/>  
+A - To create ARM templates, we can use VS code and store the templates in local repos, Azure Git repos or Github repos. For this scenario, I have used Github repos.  
 
 3) Explain the process and steps to create automated deployment pipeline. 
 A - i) sync the github repository to VS code where we will commit the changes or deploy new templates
