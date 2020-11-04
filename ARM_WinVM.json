@@ -28,22 +28,22 @@
         }
       },
 
-          "windowsOSVersion": {
-          "defaultValue": "2016-Datacenter",
-          "allowedValues": [
-              "2008-R2-SP1",
-              "2012-Datacenter",
-              "2012-R2-Datacenter",
-              "2016-Nano-Server",
-              "2016-Datacenter-with-Containers",
-              "2016-Datacenter",
-              "2019-Datacenter"
-          ],
-          "type": "String",
-          "metadata": {
-              "description": "The Windows version for the VM"
-          }
-      },
+      "windowsOSVersion": {
+        "defaultValue": "2016-Datacenter",
+        "allowedValues": [
+            "2008-R2-SP1",
+            "2012-Datacenter",
+            "2012-R2-Datacenter",
+            "2016-Nano-Server",
+            "2016-Datacenter-with-Containers",
+            "2016-Datacenter",
+            "2019-Datacenter"
+        ],
+        "type": "String",
+        "metadata": {
+            "description": "The Windows version for the VM"
+        }
+    },
     
       "vmSize": {
         "type": "string",
@@ -54,9 +54,9 @@
       },
       "location": {
         "type": "string",
-        "defaultValue": "[resourceGroup().location]",
+
         "metadata": {
-          "description": "Location for all resources."
+        "description": "Location for all resources."
         }
       }
     },
@@ -219,10 +219,10 @@
         }
       }
     ],
-    "outputs": {
-      "hostname": {
-        "type": "string",
-        "value": "[reference(variables('publicIPAddressName')).dnsSettings.fqdn]"
+      "outputs": {
+        "hostname": {
+          "type": "string",
+          "value": "[reference(variables('publicIPAddressName')).dnsSettings.fqdn]"
+        }
       }
     }
-  }
