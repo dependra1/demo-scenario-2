@@ -23,7 +23,7 @@
             "value": "2016-Datacenter"
         },
         "vmSize": {
-            "value": "Standard_A2_v2"
+            "value": "Standard_B2ms"
         },
         "location": {
             "value": "East US"
