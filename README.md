@@ -9,11 +9,11 @@ All the passwords are stored in an Azure Service known as key Vault. The deploym
 1) What are different artifacts you need to create - name of the artifacts and its purpose.<br/> 
 A - 
 
-2) List the tools you will to create and store the ARM templates.<br/>  
+2) List the tools you will to create and store the ARM templates.<br/>
 A - To create ARM templates, we can use VS code and store the templates in local repos, Azure Git repos or Github repos. For this scenario, I have used Github repos.  
 
 3) Explain the process and steps to create automated deployment pipeline. <br/> 
-A - i) sync the github repository to VS code where we will commit the changes or deploy new templates  
+A - i) sync the github repository to VS code where we will commit the changes or add new templates  
     ii) In the build pipeline, set the deploy trigger to "Enable continuous integration"  
     iii) Set the target resource group and subscription  
     iv) Create appropriate stages as per the environments and setup appropriate triggers (eg: dev, uat, prod)  
@@ -23,4 +23,4 @@ A - i) sync the github repository to VS code where we will commit the changes or
 A- Added to repos.
 
 5) Explain how will you access the password stored in Key Vault and use it as Admin Password in the VM ARM template.<br/> 
-A
+A- In the parameters, we will add the reference of the key vault along with the secret name. We need to ensure that the access policies of the key vault allows the service principall for ARM template temployment and allows it to read the secret.
