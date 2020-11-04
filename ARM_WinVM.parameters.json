@@ -11,7 +11,7 @@
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                "id": "/subscriptions/69d30387-c9cd-4cba-9985-a08d0cbbc572/resourceGroups/mykeyvaultdeploymentrg/providers/Microsoft.KeyVault/vaults/deepsinghkey"
+                "id": "/subscriptions/69d30387-c9cd-4cba-9985-a08d0cbbc572/resourceGroups/RG_Demo_Dependra/providers/Microsoft.KeyVault/vaults/deepsinghkey"
                 },
                 "secretName": "AdminPassword"
         }
