@@ -62,7 +62,7 @@
     },
 
     "variables": {
-      "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'stg')]",
+      "storageAccountName": "[concat('fezsxeamivep4', 'stg')]",
       "nicName": "demo-nic",
       "addressPrefix": "10.0.0.0/16",
       "subnetName": "Subnet1",
